@@ -78,7 +78,7 @@
                                 key={cliente.id}
                                 onClick={(e) => {
                                     e.stopPropagation(); // Prevent event bubbling that might close popover prematurely
-                                    onValueChange(cliente.id === value ? "" : cliente.id);
+                                    onValueChange(cliente.id === value ? cliente.id :"" );
                                     setOpen(false);
                                 }}
                                 role="button"
